@@ -19,18 +19,20 @@
 		<p id="site-logo-paragraph">Sklep i serwis narzędzi budowlanych</p>
 	</header>
 	<main id="site-content">
-		<div class="contact-info-container">
-			<section id="contact">
+		<div class="contact-and-location-cnt">
+			<section class="content contact">
 				<h2>Kontakt</h2>
-				<p>tel.
-					<span itemprop="telephone">
-						<a style="color: black;" href="tel:+48895344622">534 46 22</a>
-					</span>
-				</p>
-				<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-					<span itemprop="streetAddress">Wyszyńskiego 11A</span>,<br>
-					<span itemprop="postalCode">10-457</span><span itemprop="addressLocality">Olsztyn</span>
-				</address>
+				<div>
+					<p>tel.
+						<span itemprop="telephone">
+							<a style="color: black;" href="tel:+48895344622">534 46 22</a>
+						</span>
+					</p>
+					<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<span itemprop="streetAddress">Wyszyńskiego 11A</span>,<br>
+						<span itemprop="postalCode">10-457</span><span itemprop="addressLocality">Olsztyn</span>
+					</address>
+				</div>
 				<p id="work-times-title">Godziny otwarcia:
 					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor"
 						class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -71,19 +73,19 @@
 					</tr>
 				</table>
 			</section>
-			<div>
-				<iframe class="map-box"
+			<div class="map-box">
+				<iframe class="map"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18867.19111266083!2d20.48539753955079!3d53.76458590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e278d8da9fcd1d%3A0x2a0677bcf74737d8!2sSklep%20Narz%C4%99dziowy%20%22Majster%22!5e0!3m2!1spl!2spl!4v1625938451919!5m2!1spl!2spl"
-					width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+				</iframe>
 			</div>
 		</div>
-
-		<section id="shop">
+		<section class="content">
 			<h2>Sklep</h2>
 			<p>Lorem ipsum dolor sit, amet consectetur
 				adipisicing elit. Officia magnam eveniet velit sit animi iure
 				recusandae culpa fugit ex, fuga dolorum illo possimus voluptate laboriosam assumenda, est, ipsum
-				voluptatibus iusto?</p>
+				voluptatibus iusto. Oferujemy produkty firm:</p>
 		</section>
 		<div class="carousel-container">
 			<div class="carousel">
@@ -144,7 +146,7 @@
 				</div>
 			</div>
 		</div>
-		<section id="service">
+		<section class="content">
 			<h2>Serwis</h2>
 			<p>Prowadzimy serwis pogwarancyjny narzędzi firm: Bosch, Makita, Metabo itp. Lorem ipsum dolor sit amet
 				consectetur adipisicing elit. Cupiditate, possimus! Facere aut ex quibusdam.

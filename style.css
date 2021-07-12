@@ -10,7 +10,7 @@
 body {
 	background-color: whitesmoke;
 	margin: 0;
-	font-family: Arial, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #site-header {
@@ -22,6 +22,7 @@ body {
 
 #site-logo {
 	font-style: italic;
+	font-family: Arial, sans-serif;
 	font-size: 3rem;
 	color: red;
 	text-shadow: 1.5px 0.5px rgb(230, 230, 0);
@@ -36,23 +37,10 @@ body {
 }
 
 #site-content {
-	padding: 10px;
+	padding: 1rem;
 }
 
-#contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.contact-info-container {
-	display: block;
-	margin: 0;
-}
-
-#contact,
-#shop,
-#service {
+.content {
 	text-align: center;
 	width: 100%;
 	padding: 5vw;
@@ -61,26 +49,31 @@ body {
 	margin: 1rem 0;
 }
 
-#contact {
+.contact {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.map-box {
-	box-shadow: 0 0 10px var(--shadow-color);
-	border-radius: 6px;
-	width: 100%;
-	height: 40vh;
-}
-
-#contact p,
-#contact address {
+.contact p,
+.contact address {
 	margin: 14px 0;
 	font-size: 1.1rem;
 	font-weight: 700;
 	font-style: normal;
 	font-family: Arial, sans-serif;
+}
+
+.map-box {
+	box-shadow: 0 0 10px var(--shadow-color);
+	border-radius: 6px;
+	height: 50vh;
+}
+
+.map {
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
 }
 
 .bi-caret-down-fill {
@@ -143,6 +136,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	background-color: var(--primary-color);
 	color: rgba(255, 255, 255, 0.9);
 	font-size: 0.9rem;
@@ -169,35 +163,53 @@ body {
 }
 
 @media (min-width: 768px) {
+	html {
+		font-size: 18px;
+	}
+
 	#site-content {
-		padding: 2rem 1rem;
+		padding: 2rem 1.5rem;
 	}
 
 	h2 {
 		font-size: 2rem;
 	}
 
-	#contact,
-	#shop,
-	#service {
+	.content {
 		padding: 3.5vw;
-	}
-
-	#service {
-		margin-bottom: 0;
-	}
-
-	.contact-info-container {
-		display: flex;
-		margin: 0 -0.5rem;
-	}
-
-	#contact,
-	.map-box {
-		width: 50vw;
-		margin: 0 0.5rem;
 	}
 }
 
 @media (min-width: 992px) {
+	.contact-and-location-cnt {
+		display: flex;
+		margin: 0 -0.5rem;
+	}
+
+	.contact,
+	.map-box {
+		margin: 0 0.5rem;
+	}
+
+	.contact {
+		width: 40vw;
+	}
+
+	.map-box {
+		width: 60vw;
+		height: auto;
+	}
+
+	.bi-caret-down-fill {
+		display: none;
+	}
+
+	#work-times-title,
+	.bi-caret-down-fill {
+		pointer-events: none;
+	}
+
+	#work-times-list {
+		max-height: initial;
+	}
 }
