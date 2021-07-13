@@ -13,14 +13,14 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#site-header {
+.site-header {
 	background-color: var(--primary-color);
 	padding: 4vh;
 	box-shadow: 0 0 10px var(--shadow-color);
 	text-align: center;
 }
 
-#site-logo {
+.site-logo {
 	font-style: italic;
 	font-family: Arial, sans-serif;
 	font-size: 3rem;
@@ -29,14 +29,14 @@ body {
 	margin: 0;
 }
 
-#site-logo-paragraph {
+.site-logo-paragraph {
 	margin: 8px 0 0;
 	font-size: 0.9rem;
 	color: white;
 	font-family: monospace;
 }
 
-#site-content {
+.site-content {
 	padding: 1rem;
 }
 
@@ -56,7 +56,8 @@ body {
 }
 
 .contact p,
-.contact address {
+.contact address,
+#work-times-title button {
 	margin: 14px 0;
 	font-size: 1.1rem;
 	font-weight: 700;
@@ -77,12 +78,20 @@ body {
 }
 
 .bi-caret-down-fill {
-	margin: 0 10px -10px;
+	margin: 0 0 -5px 10px;
+}
+
+#work-times-title button {
+	border: none;
+	border-radius: 6px;
+	padding: 10px;
+	color: white;
+	background-color: var(--primary-color);
 }
 
 #work-times-title:hover {
-	opacity: 0.75;
-	transition: 0.15s;
+	opacity: 0.9;
+	transition: 0.2s;
 	cursor: pointer;
 }
 
@@ -131,7 +140,7 @@ body {
 	width: 200px;
 }
 
-#site-footer {
+.site-footer {
 	padding: 4vh;
 	display: flex;
 	flex-direction: column;
@@ -141,6 +150,10 @@ body {
 	color: rgba(255, 255, 255, 0.9);
 	font-size: 0.9rem;
 	box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.site-footer-info {
+	line-height: 2rem;
 }
 
 .bi-facebook,
@@ -211,5 +224,15 @@ body {
 
 	#work-times-list {
 		max-height: initial;
+	}
+
+	#work-times-title {
+		margin: 0;
+	}
+
+	#work-times-title button {
+		background-color: transparent;
+		border: none;
+		color: black;
 	}
 }

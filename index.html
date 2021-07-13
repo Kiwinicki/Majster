@@ -8,26 +8,23 @@
 	<title>Sklep i serwis elektronarzędzi Olsztyn - Majster</title>
 	<meta name="description"
 		content="Jesteśmy firmą z 20-letnim doświadczeniem w sprzedaży i naprawie elektronarzędzi budowlanych. Oferujemy kompleksowy serwis pogwarancyjny narzędzi firm: Bosch, Metabo, Makita">
-	<!--do dokończenia-->
 	<link rel="stylesheet" href="style.css" />
-	<meta itemprop="openingHours" content="Mo-Fr 8:00-16:00" id="open-hours" />
+	<link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body itemscope itemtype="https://schema.org/LocalBusiness">
-	<header id="site-header">
-		<h1 id="site-logo">
-			<span itemprop="name">Majster</span>
-		</h1>
-		<p id="site-logo-paragraph">Sklep i serwis narzędzi budowlanych</p>
+	<header class="site-header">
+		<h1 class="site-logo" itemprop="name">Majster</h1>
+		<p class="site-logo-paragraph">Sklep i serwis narzędzi budowlanych</p>
 	</header>
-	<main id="site-content">
+	<main class="site-content">
 		<div class="contact-and-location-cnt">
 			<section class="content contact">
 				<h2>Kontakt</h2>
 				<div>
 					<p>tel.
 						<span itemprop="telephone">
-							<a style="color: black;" href="tel:+48895344622">534 46 22</a>
+							<a style="color: black;" href="tel:+48895344622">89 534 46 22</a>
 						</span>
 					</p>
 					<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -35,45 +32,55 @@
 						<span itemprop="postalCode">10-457</span><span itemprop="addressLocality">Olsztyn</span>
 					</address>
 				</div>
-				<p id="work-times-title" tabindex="0" aria-expanded="false" aria-controls="work-times-list"
-					role="region">Godziny
-					otwarcia:
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor"
-						class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-						<path
-							d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-					</svg>
-				</p>
+				<h3 id="work-times-title" aria-expanded="false" aria-controls="work-times-list">
+					<button>Godziny pracy:
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+							class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+							<path
+								d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+						</svg>
+					</button>
+
+				</h3>
+				<meta itemprop="openingHours" content="Mo-Fr 8:00-16:00" id="open-hours" />
 				<table id="work-times-list" aria-labelledby="work-times-title" itemprop="openingHoursSpecification"
 					itemscope itemtype="http://schema.org/OpeningHoursSpecification" itemref="open-hours">
-					<tr class="work-times-item">
-						<td>pon.</td>
-						<td>8:00-16:00</td>
-					</tr>
-					<tr class="work-times-item">
-						<td>wt.</td>
-						<td>8:00-16:00</td>
-					</tr>
-					<tr class="work-times-item">
-						<td>śr.</td>
-						<td>8:00-16:00</td>
-					</tr>
-					<tr class="work-times-item">
-						<td>czw.</td>
-						<td>8:00-16:00</td>
-					</tr>
-					<tr class="work-times-item">
-						<td>pią.</td>
-						<td>8:00-16:00</td>
-					</tr>
-					<tr class="work-times-item">
-						<td>sob.</td>
-						<td>zamknięte</td>
-					</tr>
-					<tr class="work-times-item">
-						<td>niedz.</td>
-						<td>zamknięte</td>
-					</tr>
+					<thead>
+						<tr>
+							<th scope="col">Dzień tyg.</th>
+							<th scope="col">godz. pracy</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="work-times-item">
+							<td>pon.</td>
+							<td>8:00-16:00</td>
+						</tr>
+						<tr class="work-times-item">
+							<td>wt.</td>
+							<td>8:00-16:00</td>
+						</tr>
+						<tr class="work-times-item">
+							<td>śr.</td>
+							<td>8:00-16:00</td>
+						</tr>
+						<tr class="work-times-item">
+							<td>czw.</td>
+							<td>8:00-16:00</td>
+						</tr>
+						<tr class="work-times-item">
+							<td>pią.</td>
+							<td>8:00-16:00</td>
+						</tr>
+						<tr class="work-times-item">
+							<td>sob.</td>
+							<td>zamknięte</td>
+						</tr>
+						<tr class="work-times-item">
+							<td>niedz.</td>
+							<td>zamknięte</td>
+						</tr>
+					</tbody>
 				</table>
 			</section>
 			<div class="map-box">
@@ -93,39 +100,37 @@
 		<div class="carousel-container">
 			<div class="carousel">
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/bosch-logo.jpg" loading="lazy" alt="Boschlogo"
+					<img width="200" height="67" src="./images/bosch-logo.jpg" loading="lazy" alt="Bosch"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/metabo-logo.jpg" loading="lazy" alt="Metabologo"
+					<img width="200" height="67" src="./images/metabo-logo.jpg" loading="lazy" alt="Metabo"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/makita-logo.jpg" loading="lazy" alt="Makitalogo"
+					<img width="200" height="67" src="./images/makita-logo.jpg" loading="lazy" alt="Makita"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/proline-logo.jpg" loading="lazy" alt="Prolinelogo"
+					<img width="200" height="67" src="./images/proline-logo.jpg" loading="lazy" alt="Proline"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/rems-logo.jpg" loading="lazy" alt="Remslogo"
+					<img width="200" height="67" src="./images/rems-logo.jpg" loading="lazy" alt="Rems" itemprop="logo">
+				</div>
+				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+					<img width="200" height="67" src="./images/rubi-logo.jpg" loading="lazy" alt="Rubi" itemprop="logo">
+				</div>
+				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+					<img width="200" height="67" src="./images/stanley-logo.jpg" loading="lazy" alt="Stanley"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/rubi-logo.jpg" loading="lazy" alt="Rubilogo"
+					<img width="200" height="67" src="./images/irwin-logo.jpg" loading="lazy" alt="Irwin"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/stanley-logo.jpg" loading="lazy" alt="Stanleylogo"
-						itemprop="logo">
-				</div>
-				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/irwin-logo.jpg" loading="lazy" alt="Irwinlogo"
-						itemprop="logo">
-				</div>
-				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/weber-logo.png" loading="lazy" alt="Weberlogo"
+					<img width="200" height="67" src="./images/weber-logo.png" loading="lazy" alt="Weber"
 						itemprop="logo">
 				</div>
 
@@ -134,35 +139,33 @@
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/metabo-logo.jpg" loading="lazy" alt="Metabologo"
+					<img width="200" height="67" src="./images/metabo-logo.jpg" loading="lazy" alt="Metabo"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/makita-logo.jpg" loading="lazy" alt="Makitalogo"
+					<img width="200" height="67" src="./images/makita-logo.jpg" loading="lazy" alt="Makita"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/proline-logo.jpg" loading="lazy" alt="Prolinelogo"
+					<img width="200" height="67" src="./images/proline-logo.jpg" loading="lazy" alt="Proline"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/rems-logo.jpg" loading="lazy" alt="Remslogo"
+					<img width="200" height="67" src="./images/rems-logo.jpg" loading="lazy" alt="Rems" itemprop="logo">
+				</div>
+				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+					<img width="200" height="67" src="./images/rubi-logo.jpg" loading="lazy" alt="Rubi" itemprop="logo">
+				</div>
+				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+					<img width="200" height="67" src="./images/stanley-logo.jpg" loading="lazy" alt="Stanley"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/rubi-logo.jpg" loading="lazy" alt="Rubilogo"
+					<img width="200" height="67" src="./images/irwin-logo.jpg" loading="lazy" alt="Irwin"
 						itemprop="logo">
 				</div>
 				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/stanley-logo.jpg" loading="lazy" alt="Stanleylogo"
-						itemprop="logo">
-				</div>
-				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/irwin-logo.jpg" loading="lazy" alt="Irwinlogo"
-						itemprop="logo">
-				</div>
-				<div class="carousel-item" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-					<img width="200" height="67" src="./images/weber-logo.png" loading="lazy" alt="Weberlogo"
+					<img width="200" height="67" src="./images/weber-logo.png" loading="lazy" alt="Weber"
 						itemprop="logo">
 				</div>
 			</div>
@@ -174,20 +177,21 @@
 				Sed perspiciatis eos deleniti dolorem id.</p>
 		</section>
 	</main>
-	<footer id="site-footer">
-		<p>"Majster" S.C. I. Kucner G. Koterwas</p>
-		<p>Wyszyńskiego 11A Olsztyn</p>
-		<p>tel. 89 534 46 22</p>
-		<a href="https://www.facebook.com/Majster-Olsztyn-277200503136615/">
+	<footer class="site-footer">
+		<p class="site-footer-info">"Majster" S.C. I. Kucner G. Koterwas<br>
+			Wyszyńskiego 11A Olsztyn<br>
+			tel. 89 534 46 22</p>
+		<a href="https://www.facebook.com/Majster-Olsztyn-277200503136615/"
+			aria-label="Odwiedź także naszego facebook'a">
 			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
-				aria-label="Odwiedź także naszego facebook'a" viewBox="0 0 16 16">
+				viewBox="0 0 16 16">
 				<path
 					d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
 			</svg>
 		</a>
 		<small>&copy; 2021 wykonanie: Dawid Koterwas</small>
 	</footer>
-	<script defer src="script.js"></script>
+	<script defer type="module" src="script.js"></script>
 </body>
 
 </html>
