@@ -10,14 +10,12 @@
 			workTimesList.style.maxHeight = null;
 			workTimesTitle.setAttribute('aria-expanded', 'false');
 
-			workTimesArrow.style.transition = 'transform 0.3s';
-			workTimesArrow.style.transform = 'rotate(0deg)';
+			workTimesArrow.classList.toggle('arrow-rotate');
 		} else {
 			workTimesList.style.maxHeight = workTimesList.scrollHeight + 'px';
 			workTimesTitle.setAttribute('aria-expanded', 'true');
 
-			workTimesArrow.style.transition = 'transform 0.3s';
-			workTimesArrow.style.transform = 'rotate(180deg)';
+			workTimesArrow.classList.toggle('arrow-rotate');
 		}
 	}
 })();

@@ -89,6 +89,11 @@ body {
 
 .bi-caret-down-fill {
 	margin: 0 0 -5px 10px;
+	transition: transform 0.3s;
+}
+
+.arrow-rotate {
+	transform: rotate(180deg);
 }
 
 #work-times-title button {
